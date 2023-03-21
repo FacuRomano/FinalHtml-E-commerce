@@ -1,0 +1,31 @@
+.body__cursos {
+    background: #7e89e9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7a6ebd, #8f74ce); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a2aaf8, #5e45f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 16px;
+  }
+
+  .container__cursos{
+    padding: 20px;
+    margin: 30px;
+    .texto {
+        padding: 20px;
+        text-align: justify;
+        color: white;
+        font-family:'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: calc(1rem + .15vh);
+      }
+
+    .card{
+    align-items: center;
+    height:100%;}
+    .card:hover {
+    opacity: 0.7;}
+
+    .card-text {
+        text-align: justify;
+      
+      }
+      
+  }

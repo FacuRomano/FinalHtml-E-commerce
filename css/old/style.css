@@ -299,20 +299,19 @@ h3{
   
   
   .formulario{
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 5%);
-  max-width: 350px;
-  max-height: 450px;
-  min-width: 250px;
-  min-height: 280px;
-  border-radius: 10px;
-  background: linear-gradient(150deg, #6352fc, #69ee65);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    max-width: 350px;
+    max-height: 450px;
+    min-width: 250px;
+    min-height: 280px;
+    border-radius: 10px;
+    background: linear-gradient(150deg, #6352fc, #69ee65);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;}
 
 .formulario h5{
   font-size: 1.8rem;
