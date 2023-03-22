@@ -13,27 +13,6 @@
   font-family: 'Tilt Warp', cursive;
   src: url("https://fonts.googleapis.com/css2?family=Tilt+Warp&family"); }
 
-.container {
-  background: #7e89e9;
-  background: -webkit-linear-gradient(to right, #7a6ebd, #8f74ce);
-  background: linear-gradient(to right, #a2aaf8, #5e45f0);
-  color: white;
-  padding: 2%;
-  margin: auto;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  font-family: 'Tilt Warp', cursive;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "header header" "main main" "section-a section-b" "nosotros nosotros" "registro registro" "footer footer";
-  color: white; }
-
-.color {
-  color: white; }
-
 .header {
   grid-area: header;
   background-color: rgba(0, 0, 0, 0.507);
@@ -76,6 +55,27 @@
     text-decoration-color: white;
     border-radius: 10px;
     font-size: calc(.8rem + .5vw); }
+
+.container {
+  background: #7e89e9;
+  background: -webkit-linear-gradient(to right, #7a6ebd, #8f74ce);
+  background: linear-gradient(to right, #a2aaf8, #5e45f0);
+  color: white;
+  padding: 2%;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  font-family: 'Tilt Warp', cursive;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header header" "main main" "section-a section-b" "nosotros nosotros" "registro registro" "footer footer";
+  color: white; }
+
+.color {
+  color: white; }
 
 .main {
   grid-area: main;
@@ -366,8 +366,29 @@
     height: 100%; }
   .container__cursos .card:hover {
     opacity: 0.7; }
+  .container__cursos .fondo {
+    background-color: #ffffff3b; }
+  .container__cursos .img__card {
+    margin: auto;
+    width: 200px; }
+  .container__cursos .color__link {
+    color: white;
+    background-color: #2f11da46; }
   .container__cursos .card-text {
     text-align: justify; }
+
+.container_sp {
+  background: #7e89e9;
+  color: white;
+  padding: 2%;
+  margin: auto;
+  width: 100%;
+  gap: 0px 0px;
+  justify-content: center;
+  color: white; }
+  .container_sp .hg {
+    width: 100%;
+    height: 100%; }
 
 * {
   margin: 0;
@@ -389,3 +410,131 @@ h4 {
   text-align: center;
   display: flex;
   justify-content: center; }
+
+@media (max-width: 576px) {
+  .card-text {
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    background-color: #0e0a35f0;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "main main" "section-a section-b" "nosotros nosotros" "registro registro" "footer footer";
+    color: white; }
+  .footer {
+    grid-area: footer;
+    width: 100%;
+    margin: 50px auto;
+    padding: 5%; }
+    .footer .lista__footer {
+      padding: 20px;
+      margin: 10px;
+      height: 100%;
+      background-color: #0000003d;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column; }
+      .footer .lista__footer .contacto__footer {
+        background-color: rgba(128, 128, 128, 0.171);
+        align-items: center;
+        margin: 10px;
+        padding: 10px; }
+        .footer .lista__footer .contacto__footer .tituloLista__footer {
+          font-weight: bold;
+          font-size: calc(1rem + 0.3vw); }
+        .footer .lista__footer .contacto__footer .itemRedes__footer {
+          margin: auto; }
+      .footer .lista__footer .titular__footer {
+        background-color: rgba(128, 128, 128, 0.171);
+        align-items: center;
+        margin: 10px;
+        padding: 10px; }
+        .footer .lista__footer .titular__footer .itemCreador__footer {
+          width: 80px;
+          height: 80px;
+          margin: 10px auto; }
+        .footer .lista__footer .titular__footer .creador__footer {
+          padding: 5px; }
+      .footer .lista__footer .redes__footer {
+        background-color: rgba(128, 128, 128, 0.171);
+        align-items: center;
+        margin: 10px;
+        padding: 10px; }
+        .footer .lista__footer .redes__footer .tituloLista__footer {
+          font-weight: bold;
+          font-size: calc(1rem + 0.3vw); }
+        .footer .lista__footer .redes__footer .itemRedes__footer {
+          margin: auto; } }
+
+@media screen and (max-width: 480px) {
+  .container {
+    background-color: #0e0a35f0;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "main main" "section-a section-a" "section-b section-b" "nosotros nosotros" "registro registro" "footer footer";
+    color: white; }
+  .section-a {
+    grid-area: section-a;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15%; }
+  .footer {
+    grid-area: footer;
+    width: 100%;
+    margin: 50px auto;
+    padding: 5%; }
+    .footer .lista__footer {
+      padding: 20px;
+      margin: 10px;
+      margin-top: 100px;
+      height: 100%;
+      background-color: #0000003d;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column; }
+      .footer .lista__footer .contacto__footer {
+        padding: 20px;
+        margin: auto;
+        align-items: center;
+        background-color: rgba(128, 128, 128, 0.171);
+        display: flex;
+        padding: 20px;
+        margin: 10px; }
+      .footer .lista__footer .titular__footer {
+        padding: 20px;
+        margin: 10px;
+        align-items: center;
+        background-color: rgba(128, 128, 128, 0.171);
+        display: flex;
+        padding: 20px;
+        margin: 10px; }
+        .footer .lista__footer .titular__footer .creador__footer {
+          padding: 5px; }
+        .footer .lista__footer .titular__footer .itemCreador__footer {
+          width: 80px;
+          height: 80px;
+          margin: 10px;
+          display: none; }
+      .footer .lista__footer .redes__footer {
+        padding: 20px;
+        margin: 10px;
+        align-items: center;
+        background-color: rgba(128, 128, 128, 0.171);
+        display: flex;
+        justify-content: center; } }

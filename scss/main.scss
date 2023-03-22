@@ -1,7 +1,7 @@
 @import "fonts";
+@import "header";
 @import "index";
-@import "cursos";
-@import "productos";
+@import "cursos-productos";
 @import "tecnologias"; 
 @import "servicioTecnico";
 @import "sectorProductos";
@@ -29,4 +29,176 @@
     justify-content: center;}
   
 
+  @media (max-width: 576px) {
+      .card-text {
+          font-size: 0.8rem;
+      }
+
+  }
+
+
+  @media screen and (max-width:1024px){
+
+    .container {
+      background-color: #0e0a35f0;
+      color: white;
+      padding: 20px;
+      margin: 20px auto;
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "header header"
+        "main main"
+        "section-a section-b"
+        "nosotros nosotros"
+        "registro registro"
+        "footer footer";
+      color: white;}
+
+      .footer{grid-area: footer;
+        width: 100%;
+        margin: 50px auto;
+        padding: 5%;
+        .lista__footer{
+          padding: 20px;
+          margin: 10px;
+          height: 100%;
+          background-color: #0000003d;
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          .contacto__footer{
+              background-color: rgba(128, 128, 128, 0.171);
+              align-items: center;
+              margin: 10px;
+              padding: 10px;
+              .tituloLista__footer{
+                  font-weight: bold;
+                  font-size: calc(1rem + 0.3vw);
+                }
+              .itemRedes__footer{
+              margin: auto;}
+          }
+          .titular__footer{
+              background-color: rgba(128, 128, 128, 0.171);
+              align-items: center;
+              margin: 10px;
+              padding: 10px;
+              .itemCreador__footer{
+                  width: 80px;
+                  height: 80px;
+                  margin: 10px auto;
+                }
+              .creador__footer{
+                  padding: 5px;
+                }
+            
+              }
+          .redes__footer{
+              background-color: rgba(128, 128, 128, 0.171);
+              align-items: center;
+              margin: 10px;
+              padding: 10px;
+              .tituloLista__footer{
+                  font-weight: bold;
+                  font-size: calc(1rem + 0.3vw);
+                }
+              .itemRedes__footer{
+                  margin: auto;}}
+              
+        }
+      }
+  }
+
+  @media screen and (max-width:480px){
+
+    .container {
+      background-color: #0e0a35f0;
+      color: white;
+      padding: 20px;
+      margin: 20px auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "header header"
+        "main main"
+        "section-a section-a"
+        "section-b section-b"
+        "nosotros nosotros"
+        "registro registro"
+        "footer footer";
+      color: white;}
+
+      .section-a { grid-area: section-a; 
+        width: 100%;
+        margin: auto;
+        margin-bottom: 15%;
+    
+      }
+
+      .footer{grid-area: footer;
+        width: 100%;
+        margin: 50px auto;
+        padding: 5%;
+        .lista__footer{
+          padding: 20px;
+          margin: 10px;
+          margin-top: 100px;
+          height: 100%;
+          background-color: #0000003d;
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          .contacto__footer{
+              padding: 20px;
+              margin: auto;
+              align-items: center;
+              background-color: rgba(128, 128, 128, 0.171);
+              display: flex;
+              padding: 20px;
+              margin: 10px;
+            
+            }
+          .titular__footer{
+              padding: 20px;
+              margin: 10px;
+              align-items: center;
+              background-color: rgba(128, 128, 128, 0.171);
+              display: flex;
+              padding: 20px;
+              margin: 10px;
+              .creador__footer{
+                  padding: 5px;
+                }
+              .itemCreador__footer{
+                  width: 80px;
+                  height: 80px;
+                  margin: 10px;
+                  display: none;
+                }
+            }
+          .redes__footer{
+              padding: 20px;
+              margin: 10px;
+              align-items: center;
+              background-color: rgba(128, 128, 128, 0.171);
+              display: flex;
+              justify-content: center;
+            }
+  
+        }
+      }
+      
+
+
+  }
 

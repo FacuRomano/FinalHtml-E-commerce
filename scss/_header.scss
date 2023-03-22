@@ -1,0 +1,56 @@
+.header { 
+    grid-area: header; 
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+    .div__header{
+      .titulo__header{
+        margin: 10px;
+        padding: 1%;
+        list-style-type: none;
+        display: flex;
+        justify-content:center;
+        .logo__header{
+          padding: 5%;
+          margin: 2%;
+          min-width: 40px;
+          max-width: 350px;
+          display: flex;
+          .img__header{
+            border-radius: 30px;
+            min-width: 40px;
+            display: flex;  
+          }
+        }
+        .h1{
+          padding: 0px;
+          font-family: 'Bebas Neue';
+          margin: auto;
+          text-align: center;
+          h1{
+            margin: 20px;
+            font-size: calc(0.5rem + 4vw);
+            display: flex;
+            text-align: center;
+            color: white;
+          }
+        }
+      }
+      .menu__header{
+        margin: -20px 20px 20px 20px;
+        background-color: rgba(0, 0, 0, 0);
+        text-decoration: solid;
+        text-decoration-color: white;
+        border-radius: 10px;
+        font-size: calc(.8rem + .5vw);
+        
+      }
+  
+    }
+    
+  
+  }
