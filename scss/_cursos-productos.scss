@@ -16,7 +16,14 @@
         font-weight: bold;
         font-size: calc(1rem + .15vh);
       }
-
+    .historia__nos{
+      background-image: url(../multimedia/FondoIndex.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size:cover;
+      background-attachment: fixed;
+      border-radius: 10px;
+    }
     .card{
     align-items: center;
     height:100%;}
@@ -38,4 +45,15 @@
       
       }
       
+  }
+
+  .historia__nos::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #7e89e977; 
+    background: -webkit-linear-gradient(to right, #7a6ebd, #8f74ce); 
+    background: linear-gradient(to right, #a2aaf8, #5e45f0); 
   }

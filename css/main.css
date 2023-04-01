@@ -13,6 +13,9 @@
   font-family: 'Tilt Warp', cursive;
   src: url("https://fonts.googleapis.com/css2?family=Tilt+Warp&family"); }
 
+.texto__nos {
+  background-image: url(../multimedia/FondoIndex.jpg); }
+
 .header {
   grid-area: header;
   background-color: rgba(0, 0, 0, 0.507);
@@ -302,6 +305,13 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: calc(1rem + .15vh); }
+  .container__cursos .historia__nos {
+    background-image: url(../multimedia/FondoIndex.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 10px; }
   .container__cursos .card {
     align-items: center;
     height: 100%; }
@@ -317,6 +327,16 @@
     background-color: #2f11da46; }
   .container__cursos .card-text {
     text-align: justify; }
+
+.historia__nos::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #7e89e977;
+  background: -webkit-linear-gradient(to right, #7a6ebd, #8f74ce);
+  background: linear-gradient(to right, #a2aaf8, #5e45f0); }
 
 .lista__ST {
   display: flex;
