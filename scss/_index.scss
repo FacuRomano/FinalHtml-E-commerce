@@ -130,36 +130,65 @@
       display: flex;
       border-radius: 20px;}
   .redondo{
+    height: fit-content;
+    width:20%;
     padding: 1%;
     margin: 5%;
-    background: #eedaff;
+    background: #eedaff71;
     border-radius: 2em;
-    border-color: #eedaff;
+    border-color: #eedaff00;
+    color: white;
     text-decoration: none;
     font-size: smaller;
     border-style: solid;
     display: flex;
-    height: fit-content;
-    width: fit-content;
+    justify-content: center;
+    a{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
     .redondo strong{
       text-align: center;
       text-decoration: none;}
+      &:hover{
+        color: white;
+        text-decoration: underline;
+        border-color: white;
+        border-style: double;
+      }
   }
   .redondo2{
+    height: fit-content;
+    width:20%;
     padding: 1%;
     margin: 5%;
-    background: #eedaff;
+    background: #eedaff7a;
     border-radius: 2em;
-    border-color: #eedaff;
+    border-color: #eedaff00;
     text-decoration: none;
     font-size: smaller;
     border-style: solid;
     display: flex;
-    height: fit-content;
-    width: fit-content;
+    justify-content: center;
+    a{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
     .redondo2 strong{
       text-align: center;
       text-decoration: none;}
+      &:hover{
+        color: white;
+        text-decoration: underline;
+        border-color: white;
+        border-style: double;
+      }
   }
   #GifNos{
     padding: 10px;
@@ -171,6 +200,8 @@
   
   #registro { grid-area: registro;
     width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
   
     .divisorindex{
       margin-top: 90px;}
@@ -184,8 +215,9 @@
       max-height: 450px;
       min-width: 250px;
       min-height: 280px;
-      border-radius: 10px;
+      border-radius: 4px;
       background: linear-gradient(150deg, #6352fc, #69ee65);
+      box-shadow: 7px 13px 37px #000;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;

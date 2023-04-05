@@ -13,9 +13,6 @@
   font-family: 'Tilt Warp', cursive;
   src: url("https://fonts.googleapis.com/css2?family=Tilt+Warp&family"); }
 
-.texto__nos {
-  background-image: url(../multimedia/FondoIndex.jpg); }
-
 .header {
   grid-area: header;
   background-color: rgba(0, 0, 0, 0.507);
@@ -172,35 +169,58 @@
       display: flex;
       border-radius: 20px; }
     .nosotros .pie__nosotros .redondo {
+      height: fit-content;
+      width: 20%;
       padding: 1%;
       margin: 5%;
-      background: #eedaff;
+      background: #eedaff71;
       border-radius: 2em;
-      border-color: #eedaff;
+      border-color: #eedaff00;
+      color: white;
       text-decoration: none;
       font-size: smaller;
       border-style: solid;
       display: flex;
-      height: fit-content;
-      width: fit-content; }
+      justify-content: center; }
+      .nosotros .pie__nosotros .redondo a {
+        color: white;
+        text-decoration: none; }
+        .nosotros .pie__nosotros .redondo a:hover {
+          text-decoration: underline; }
       .nosotros .pie__nosotros .redondo .redondo strong {
         text-align: center;
         text-decoration: none; }
+      .nosotros .pie__nosotros .redondo:hover {
+        color: white;
+        text-decoration: underline;
+        border-color: white;
+        border-style: double; }
     .nosotros .pie__nosotros .redondo2 {
+      height: fit-content;
+      width: 20%;
       padding: 1%;
       margin: 5%;
-      background: #eedaff;
+      background: #eedaff7a;
       border-radius: 2em;
-      border-color: #eedaff;
+      border-color: #eedaff00;
       text-decoration: none;
       font-size: smaller;
       border-style: solid;
       display: flex;
-      height: fit-content;
-      width: fit-content; }
+      justify-content: center; }
+      .nosotros .pie__nosotros .redondo2 a {
+        color: white;
+        text-decoration: none; }
+        .nosotros .pie__nosotros .redondo2 a:hover {
+          text-decoration: underline; }
       .nosotros .pie__nosotros .redondo2 .redondo2 strong {
         text-align: center;
         text-decoration: none; }
+      .nosotros .pie__nosotros .redondo2:hover {
+        color: white;
+        text-decoration: underline;
+        border-color: white;
+        border-style: double; }
     .nosotros .pie__nosotros #GifNos {
       padding: 10px;
       min-width: 40px;
@@ -209,7 +229,9 @@
 
 #registro {
   grid-area: registro;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold; }
   #registro .divisorindex {
     margin-top: 90px; }
   #registro .formulario {
@@ -221,8 +243,9 @@
     max-height: 450px;
     min-width: 250px;
     min-height: 280px;
-    border-radius: 10px;
+    border-radius: 4px;
     background: linear-gradient(150deg, #6352fc, #69ee65);
+    box-shadow: 7px 13px 37px #000;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
@@ -306,11 +329,10 @@
     font-weight: bold;
     font-size: calc(1rem + .15vh); }
   .container__cursos .historia__nos {
-    background-image: url(../multimedia/FondoIndex.jpg);
+    background-image: url(../multimedia/ImagenFinal.PNG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     border-radius: 10px; }
   .container__cursos .card {
     align-items: center;
@@ -325,18 +347,13 @@
   .container__cursos .color__link {
     color: white;
     background-color: #2f11da46; }
+    .container__cursos .color__link:hover {
+      border-style: double;
+      border-color: white; }
+  .container__cursos .margen1 {
+    margin-top: 4%; }
   .container__cursos .card-text {
     text-align: justify; }
-
-.historia__nos::before {
-  content: "";
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #7e89e977;
-  background: -webkit-linear-gradient(to right, #7a6ebd, #8f74ce);
-  background: linear-gradient(to right, #a2aaf8, #5e45f0); }
 
 .lista__ST {
   display: flex;
@@ -371,6 +388,7 @@
     padding: 20px;
     margin: 30px 0;
     max-width: 400px;
+    height: 150px;
     background-color: #0000003d;
     text-align: center;
     color: white;
@@ -458,12 +476,15 @@
   margin: auto;
   margin-top: 50px;
   border-radius: 4px;
-  font-family: 'calibri';
   color: white;
-  box-shadow: 7px 13px 37px #000; }
+  box-shadow: 7px 13px 37px #000;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold; }
   .form-register .h5 {
     font-size: 2rem;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold; }
   .form-register .controls {
     width: 100%;
     background: #ffffff3b;
@@ -471,13 +492,14 @@
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid #1f54c500;
-    font-family: 'calibri';
     font-size: 18px; }
   .form-register .p {
     height: 40px;
     text-align: center;
-    font-size: 18px;
-    line-height: 40px; }
+    font-size: 1rem;
+    line-height: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold; }
     .form-register .p .a {
       color: white;
       text-decoration: none; }
@@ -486,11 +508,11 @@
         text-decoration: underline; }
   .form-register .botons {
     width: 100%;
-    background: #1f53c5;
+    background: #6C3483;
     border: none;
     padding: 12px;
     color: white;
-    margin: 16px 0;
+    margin: 16px auto;
     font-size: 16px;
     border-radius: 20px; }
     .form-register .botons:hover {

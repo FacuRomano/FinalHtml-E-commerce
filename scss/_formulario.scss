@@ -9,12 +9,15 @@
     margin: auto;
     margin-top: 50px;
     border-radius: 4px;
-    font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
     .h5 {
         font-size: 2rem;
         margin-bottom: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
       }
     .controls {
     width: 100%;
@@ -23,13 +26,15 @@
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid #1f54c500;
-    font-family: 'calibri';
     font-size: 18px;}
     .p {
+        
         height: 40px;
         text-align: center;
-        font-size: 18px;
+        font-size: 1rem;
         line-height: 40px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
         .a {
             color: white;
             text-decoration: none;
@@ -41,13 +46,14 @@
         }
     .botons {
         width: 100%;
-        background: #1f53c5;
+        background: #6C3483;
         border: none;
         padding: 12px;
         color: white;
-        margin: 16px 0;
+        margin: 16px auto;
         font-size: 16px;
         border-radius: 20px;
+        
         &:hover{
             transform: scale(1.05);
             }
